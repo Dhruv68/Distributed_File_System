@@ -1,4 +1,2 @@
-2022-05-01 21:08:46,835  __main__  ERROR: Invalid User
-2022-05-01 21:08:46,836  __main__  INFO: payodhi logged in 
-2022-05-01 21:09:10,827  __main__  INFO: file permission for abc12 updated for user payodhi 
-2022-05-01 21:09:10,862  __main__  INFO: file permission for abc12 updated for user payodhi 
+2022-05-10 00:23:02,060  __main__  INFO: dhruv logged in 
+2022-05-10 00:23:27,639  __main__  INFO: Write operation performed on djp with user dhruv
