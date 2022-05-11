@@ -41,8 +41,8 @@ Install the jupyter in your System.
             
 Step 2:   
 Install following libraries:   
-  Socket:   To provide the socket values like IP address and port number to create no overlapping connection between clients and server    
-	Socketserver:  	To implement a server-client environment (the connection between server and client)    
+  Socket:	To provide the socket values like IP address and port number to create no overlapping connection between clients and server    
+	Socketserver:		To implement a server-client environment (the connection between server and client)    
 	ThreadingTCPServer:   To implement the multithreading for multiple client connections at the same time. Also, to implement thread-locking for no overlapping write or edit operation    
 	OS and SYS:   OS to get access to the directory and file path to implement all the changes    
 	Pandas:   To access and update the excel sheet for permission and validation of clients    
