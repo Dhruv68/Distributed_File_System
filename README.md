@@ -67,7 +67,6 @@ Before running the client node, please enter you user name and password into the
 Step 7:  
 Run the Client Node and enter the operation that you want to perform.  
 
-        Have Fun with it....
 
 
 
