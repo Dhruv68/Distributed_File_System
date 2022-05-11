@@ -3,15 +3,22 @@
 #### Group 6  
   
 ## Introduction to the Project:
-
-This project will help you to create a distributed file system in which one user can access the server and operate the functions in the server like:       
+    
+The aim of this project is to build a Distributed File System with security features. The code was implemented in two phases    
+    
+	Phase 1: Developed a Simple Distributed File System    
+	Phase  2: Implemented the security functionality of the Distributed File System
+	    
+This project will help you to implement an Encrypted distributed file system in which client/user can access the server and operate the functions in the server like:       
   1 Create Directory   
   2 Create File   
   3 Write File   
   4 Read File   
   5 Rename File   
   6 Delete File   
-  7 Get the List of File   
+  7 Get the List of File  
+  8 Change the permission    
+  
 
 ## Implementation:
 
@@ -96,7 +103,3 @@ If you want to see the log of the operations performed by the client. You will f
     
 Step 10:    
 When you delete any file physically from any of the servers. The pop-up will be displayed automatically and indicates the file which is deleted and the server from which it is deleted.    
-    
-
-
-
