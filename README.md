@@ -17,22 +17,22 @@ This project will help you to create a distributed file system in which one user
 
 This distributed file system has three-level architecture:  
 Level 1: All Clients (Authentic/Random users)   
-Level 2: Master Node    
-Level 3: Servers   
+Level 2: Master Node and Scheduler    
+Level 3: Three Server Node.      
 
 ![IMG_20220318_154632__01__01](https://user-images.githubusercontent.com/34422998/159078539-618bda95-6b7f-4ae1-9d2e-1dd066d6c133.jpg)
 
 #### Level 1: All Client  
-The client node needs to connect with the master node, they are directly not able to connect to the server.   
-The client needs to validate themselves to access the server at the master node.  
+The client is connected to only the master (semi-server) node. The client in the system needs to authenticate themselves in order to access the functionality provided by the server. The client implements the encryption on the data (like the content of the file, file name, and directory name), and validates themselves in order to access the server at the master node.     
 
 #### Level 2: Master Node   
-The master node is connected to all the servers and it validates the client after validation it forwards the client's request to the server to perform the requested task.   
+The master node is responsible for establishing the connection between the client and the servers. This acts as an intermediate node between the client and the replica servers. The task of the master node is to provide a link between the client and the server. Before establishing the connection, it will validate the client. The master node will also handle which client will access which file as per the permission provided by the owner. The scheduler will keep track of the files in the directory if any file is physically deleted from the server, it will show the pop-up message.        
 
 #### Level 3: Servers  
-The server gets the request of the client through the master node and performs that task and sends the feedback to the client back through the Master node.
-
-
+All the client requests are processed by the servers that are directed by the master node. The response of each operation is again sent to the master server to be communicated back to the client. The server will have the encrypted data of the client and will not be able to get any information from it.   
+    
+ The master node is an important part of our architecture which will have the record of the actions made by the client and records of all permission and validation data.       
+    
 ## Steps to Implement this project.  
   
 Step 1:  
