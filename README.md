@@ -36,12 +36,12 @@ The server gets the request of the client through the master node and performs t
 ## Steps to Implement this project.  
   
 Step 1:  
-Install the jupyter in your System.  
-        Here is the link to download Jupyter lab: https://jupyter.org/    
+Install any IDE in which you want to perform this project. (Jupiter is more recommended). Here is the link to download Jupyter lab: https://jupyter.org/
+       
             
 Step 2:   
 Install following libraries:   
-  Socket:	To provide the socket values like IP address and port number to create no overlapping connection between clients and server 
+  	Socket:	       To provide the socket values like IP address and port number to create no overlapping connection between clients and server 
       
 	Socketserver:		To implement a server-client environment (the connection between server and client)    
 	    
@@ -66,28 +66,37 @@ Install following libraries:
 	Time:   To implement the time loop for executing the scheduler function to search for a malicious attack    
 	    
  	Getpass:  To implement the hide input feature for passwords    
-	    
-If you lack any single library from above, then install it before performing or implementing this project.      
-    
-        
+    	    
+If you lack any single library from above, then install it before performing or implementing this project.     
+The simple way to install these libraries in your system is to write “pip install ________(library name)” on the anaconda prompt or cmd     
+         
+Note:     
+Change the absolute Path in all server files and the scheduler file to the location of the files directory of each server in your system    
+      
 Step 3:  
-Download this project or clone it in your device.  
-    
+Clone this project from the Github repository in your system.  
+        
 Step 4:  
-Open this project then run the all server program (server1, server2, server3).
-         Get the Ip address that you will get after executing the second cell.(output will be the Ip address like: 192.168.2.64)
+Open the project in your IDE or Jupyter notebook and run all three server files. You will get the IP address of that server. Copy that server IP address and paste it into the second cell of the master file in the IP array sequentially. Enter the IP address in sequence like: IP = ["Server1 IP", "Server2 IP", "Server3 IP"]. Then run the master node.    
            
 Step 5:  
-Copy that Ip address and write it inside the IP_address variable that you will find it in the master node in second cell.  
-        Enter the IP address in sequance like: IP_address = ["Server1 IP", "Server2 IP", "Server3 IP"]
-        Then run the master node.  
+Before running the “client-dhruv.ipynb” file edit the validation excel sheet in a master folder by adding your username and password.      
           
 Step 6:  
-Before running the client node, please enter you user name and password into the validation excell sheet.  
+After making changes in the validation file, run the “scheduler.ipynb” file present in the master folder. This file will execute continuously until you stop executing this file externally.      
         
 Step 7:  
-Run the Client Node and enter the operation that you want to perform.  
-
+Now you can execute the “client-dhruv.ipynb” file. Initially, it will ask for a username and password. Enter the username and password that you have entered in the validation sheet.    
+    
+Step 8:     
+ After that, you will be able to perform all the operations like creating a directory and file, writing a file, updating the file, deleting a file, renaming a file, listing file names, and a few more operations. All data will be stored in an encrypted format at the server end.    
+     
+Step 9:     
+If you want to see the log of the operations performed by the client. You will find the logger text file in the master folder.     
+    
+Step 10:    
+When you delete any file physically from any of the servers. The pop-up will be displayed automatically and indicates the file which is deleted and the server from which it is deleted.    
+    
 
 
 
