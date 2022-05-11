@@ -41,13 +41,21 @@ Install the jupyter in your System.
             
 Step 2:   
 Install following libraries:   
-        Write is command in the Anaconda promt/cmd
-        pandas:         pip install pandas    
-        socket:         pip install socket    
-        jason:          pip install jason      
-        pickle:         pip install pickle  
-        threading:      pip install threading  
-        socketserver:   pip install socketserver    
+  Socket:   To provide the socket values like IP address and port number to create no overlapping connection between clients and server    
+	Socketserver:  	To implement a server-client environment (the connection between server and client)    
+	ThreadingTCPServer:   To implement the multithreading for multiple client connections at the same time. Also, to implement thread-locking for no overlapping write or edit operation    
+	OS and SYS:   OS to get access to the directory and file path to implement all the changes    
+	Pandas:   To access and update the excel sheet for permission and validation of clients    
+	Pickle and Jason:   These libraries are used as the temporary storage unit while sending or fetching the data to the server or from the server.    
+	Logging:   To configure the logger file to keep track of all the changes made by the client on the server    
+	Traceback:   To print or retrieve the stack created to keep track of any update made by the client in the logger text file    
+	Base64:   This library is used to implement encryption on data at the client-side to keep data secure at the server end     
+	Pyaes, pbkdf2, binascii and secret:  pyaes to implement AES encryption method, pbkdf2 is a library to implement simple cryptography key derivation function, binascii to convert between binary and ASCII and secret to generate secure random numbers for managing secrets    
+	Tkinter:  To implement the pop-up notification which will indicate whether any file is deleted physically or not    
+	Time:   To implement the time loop for executing the scheduler function to search for a malicious attack    
+ 	Getpass:  To implement the hide input feature for passwords    
+If you lack any single library from above, then install it before performing or implementing this project.      
+    
         
 Step 3:  
 Download this project or clone it in your device.  
