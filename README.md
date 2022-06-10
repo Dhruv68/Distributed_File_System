@@ -7,7 +7,7 @@
 The aim of this project is to build a Distributed File System with security features. The code was implemented in two phases    
     
 	Phase 1: Developed a Simple Distributed File System    
-	Phase  2: Implemented the security functionality of the Distributed File System
+	Phase 2: Implemented the security functionality of the Distributed File System
 	    
 This project will help you to implement an Encrypted distributed file system in which client/user can access the server and operate the functions in the server like:       
   1 Create Directory   
